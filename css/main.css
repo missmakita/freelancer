@@ -1,3 +1,357 @@
-/*
- * Estilos de tu proyecto
- */
+/* COLORES: #2c3e50, #18bc9c, #212529 */
+
+/* CLASES REUTILIZABLES */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+}
+
+.container {
+	width: 1150px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.container:before, .container:after {
+	content: " ";
+	display: table;
+}
+
+*:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container:after {
+	clear: both;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+hr { 
+	box-sizing: content-box;
+   height: 0;
+   overflow: visible;
+}
+
+hr.star-white, hr.star-black {
+    max-width: 250px;
+    margin: 25px auto 30px;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-top: solid 5px;
+}
+
+hr.star-white:after {
+  	color: #fff;
+	background-color: #18bc9c;
+}
+
+hr.star-black:after {
+  	color: #212529;
+	background-color: #fff;
+}
+
+hr.star-white:after, hr.star-black:after {
+    font-family: FontAwesome;
+    font-size: 32px;
+    position: relative;
+    bottom: 20px;
+    display: inline-block;
+    padding: 0 8px;
+    content: '\f005';
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-align: center;
+}
+
+/*-------------------------------------------------- */
+
+
+/* MENU BAR */
+
+#menu {
+	z-index: 1000;
+	width: 100%;
+	background-color: #2c3e50;
+	height: 108px;
+	top: 0;
+	position: fixed;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.menu {
+	/*outline: 1px solid green;*/
+	display: block;
+	padding: 0 20 0 20;
+}
+
+.menu a {
+	color: #fff;
+}
+
+.menu-titulo {
+	font-size: 32px;
+	display: inline-block;
+	padding: 34px 6px;
+}
+
+.menu-botones {
+	padding: 45px 10px;
+	float: right;
+}
+
+.menu-boton {
+	font-size: 17px;
+	padding: 11px;
+}
+
+.menu-boton:hover {
+	color: #18bc9c; 
+}
+
+.menu-boton:active {
+	color: #fff;
+   border-radius: 3px;
+   background: #18bc9c;
+}
+
+/* SECCIÓN 1: COVER */
+#cover {
+	padding: 200px 0 100px;
+	background-color: #18bc9c;
+	text-align: center;
+	color: #fff;
+	
+}
+
+.cover {
+	/*outline: 1px solid yellow;*/
+	height: auto;
+}
+
+.cover img {
+	display: block;
+   margin: 0 auto 20px;
+	vertical-align: middle;
+}
+
+h1 {
+	font-size: 76px;
+	margin: 30px 0 35px;
+}
+
+.skills {
+	font-family: 'Lato', sans-serif;
+	font-size: 28px;
+}
+
+/* SECCIÓN 2: PORTFOLIO */
+#portfolio {
+	padding: 0;
+	background-color: #fff;
+	text-align: center;
+	color: #212529;	
+}
+
+.portfolio {
+	margin: 0;
+	width: 100%;
+	padding-bottom: 100px;
+}
+
+h2 {
+	font-size: 48px;
+   margin: 0;
+	padding-top: 100px;
+}
+
+.portfolio img {
+	width: 350px;
+	margin: 0 15px 30px;
+}
+ /*SECCIÓN 3: ABOUT*/
+#about {
+	background-color: #18bc9c;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.about p {
+	width: 350px;
+	height: 195px;
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	vertical-align: top;
+	padding: 0 15px;
+	margin-top: 0;
+	text-align: left;
+}
+
+.boton-download{
+	position: relative;
+   width: 100%;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+}
+.about a {
+	color: #fff;
+	font-size: 20px;
+  	margin-top: 15px;
+ 	transition: all .3s ease-in-out;
+  	border: solid 2px #fff;
+  	background: 0 0;
+	padding: 8px 16px;
+  	line-height: 1.5;
+  	border-radius: 5px;
+	text-decoration: none;
+	display: inline-block;
+   font-weight: 400;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+}
+
+/* SECCIÓN 4: CONTACT */
+
+form {
+	/*outline: 1px solid teal;*/
+	font-family: 'Lato', sans-serif;
+	background-color: #fff;
+	padding: 0 180px 100px;
+}
+
+.formulario {
+	/*outline: 1px solid magenta;*/
+	position: relative;
+  	margin-bottom: 0;
+  	padding-bottom: 8px;
+  	border-bottom: 1px solid #eee;
+	width: 760px;
+}
+
+.formulario label {
+	font-size: 13px;
+  	line-height: 28px;
+  	position: relative;
+  	z-index: 0;
+  	top: 0px;
+  	display: block;
+  	margin: 0;
+	vertical-align: baseline;
+  	opacity: 0;
+	text-align: left;
+}
+
+.formulario input, #message {
+	/*outline: 1px solid yellow;*/
+	font-size: 13px;
+  	position: relative;
+  	z-index: 1;
+  	padding-right: 0;
+  	padding-left: 0;
+  	resize: none;
+  	border: none;
+  	border-radius: 0;
+  	background: 0 0;
+  	box-shadow: none;
+	font-family: 'Lato', sans-serif;
+}
+
+.boton-send {
+	font-weight: 700;
+  	color: #fff;
+  	border-color: #18bc9c;
+  	background-color: #18bc9c;
+	padding: 8px 16px;
+  	font-size: 20px;
+  	line-height: 1.5;
+  	border-radius: 5px;
+	display: inline-block;
+	text-align: center;
+  	vertical-align: middle;
+	border: 1px solid transparent;
+	font-family: inherit;
+	margin-top: 30px
+}
+
+/* FOOTER */
+#footer {
+	background-color: #2c3e50;
+	color: #fff;
+}
+
+.footer-column {
+	/*outline: 1px solid cyan;*/
+	display: inline-block;
+	width: 370px;
+	text-align: center;
+	height: 342px;
+	vertical-align: top;
+}
+
+
+footer h3 {
+	margin-bottom: 30px;
+	font-size: 28px;
+}
+
+footer p {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+	font-size: 20px;
+	border: 2px solid #fff;
+	border-radius: 25px;
+	width: 50px;
+	height: 50px;
+	padding: 12px;
+}
+
+#footer-freelancer {
+	color: #18bc9c;
+}
+
+
+
+
+
+

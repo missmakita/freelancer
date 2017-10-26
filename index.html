@@ -1,1 +1,110 @@
-<!-- Agrega aquí la estructura HTML de tu sitio web -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Freelancer</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,700,800" rel="stylesheet">
+</head>
+<body>
+	<nav id="menu">
+		<div class="menu container uppercase">
+			<a class="menu-titulo" href="#cover">start bootstrap</a>
+			<div class="menu-botones">
+				<a class="menu-boton" href="#portfolio">portfolio</a>
+				<a class="menu-boton" href="#about">about</a>
+				<a class="menu-boton" href="#contact">contact</a>
+			</div>	
+		</div>
+	</nav>
+	<header id="cover">
+		<div class="cover container">
+			<img src="assets/images/profile.png" alt="">
+			<h1 class="uppercase">Start bootstrap</h1>
+			<hr class="star-white">
+			<span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+		</div>	
+	</header>
+	<section id="portfolio">
+		<div class="portfolio container">
+			<h2 class="uppercase">Portfolio</h2>
+			<hr class="star-black">
+			<img src="assets/images/portfolio/cabin.png" alt="">
+			<img src="assets/images/portfolio/cake.png" alt="">
+			<img src="assets/images/portfolio/circus.png" alt="">
+			<img src="assets/images/portfolio/game.png" alt="">
+			<img src="assets/images/portfolio/safe.png" alt="">
+			<img src="assets/images/portfolio/submarine.png" alt="">
+		</div>	
+	</section>
+	<section id="about">
+		<div class="about container">
+			<h2 class="uppercase">About</h2>
+			<hr class="star-white">
+			<p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+			<p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+			<div class="boton-download">
+				<a href="#" class="btn btn-lg btn-outline">
+				<i class="fa fa-download"></i>
+				Download Theme
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="contact">
+		<div class="contact container">
+			<h2 class="uppercase">contact me</h2>
+			<hr class="star-black">
+			<form action="">
+				<div class="formulario">
+					<label>Name</label>
+					<input type="text" placeholder="Name" >
+				</div>
+				<div class="formulario">
+					<label>Email Address</label>
+					<input type="text" placeholder="Email Address " >
+				</div>
+				<div class="formulario">
+					<label>Phone Number</label>
+					<input type="text" placeholder="Phone Number">
+				</div>
+				<div class="formulario">
+					<label>Message</label>
+					<textarea class="formulario" id="message" rows="5" placeholder="Message"></textarea>
+				</div>
+				<div class="form-group">
+                <button type="submit" class="btn boton-send btn-lg" id="sendMessageButton">Send</button>
+           	</div>
+			</form>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="footer container">
+			<div class="footer-column">
+				<h3 class="uppercase">location</h3>
+				<p>3481 Melrose Place<br> 
+				Beverly Hills, CA 90210
+				</p>
+			</div>
+			<div class="footer-column">
+			<h3 class="uppercase">around the web</h3>
+			<ul>
+				<li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li> <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
+				<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+				<li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+				<li><i class="fa fa-dribbble" aria-hidden="true"></i></li>
+			</ul>
+		</div>
+			<div class="footer-column">
+				<h3 class="uppercase">about freelancer</h3>
+				<p>
+				Freelance is a free to use, open source <br>
+				Bootstrap theme created by <a id="footer-freelancer" href="#">Start Bootstrap</a>.
+				</p>
+			</div>
+		</div>
+	</footer>	
+</body>
+</html>
